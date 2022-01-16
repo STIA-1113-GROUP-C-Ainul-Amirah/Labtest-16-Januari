@@ -1,0 +1,36 @@
+package labTest;
+import java.util.Scanner;
+public class labTes2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scan = new Scanner (System.in);
+		
+		int number;
+		
+		System.out.println("Please enter a number: ");
+		number = scan.nextInt();
+		
+		if (number % 2 != 0) {
+			System.out.println("it is Odd Number");
+		}
+		else
+			System.out.println("it is Even Number");
+		
+		System.out.println("Bye!");
+	}
+
+}
+
+output : 
+
+Please enter a number: 
+80
+it is Even Number
+Bye!
+
+
+Please enter a number: 
+71
+it is Odd Number
+Bye!
