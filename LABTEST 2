@@ -1,0 +1,72 @@
+package labTest;
+import java.util.Scanner;
+public class Lab2question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scan = new Scanner(System.in);
+		
+		double m1, m2, m3;
+		
+		
+			System.out.println("Enter student 1 mark : ");
+			m1 = scan.nextInt();
+			
+			while ((m1<0) || (m1>100)){
+				System.out.println("Invalid Input, try again");
+				System.out.println("Enter student 1 mark between 0 - 100 : ");
+				m1 = scan.nextInt();
+			}
+			System.out.println("Enter student 2 mark  : ");
+			m2 = scan.nextInt();
+			
+			while ((m2<0) || (m2>100)){
+				System.out.println("Invalid Input, try again");
+				System.out.println("Enter student 2 mark between 0 - 100 : ");
+				m2 = scan.nextInt();
+			}
+			System.out.println("Enter student 3 mark : ");
+			m3 = scan.nextInt();
+			
+			while ((m3<0) || (m3>100)){
+				System.out.println("Invalid Input, try again");
+				System.out.println("Enter student 3 mark between 0 - 100 : ");
+				m3 = scan.nextInt();
+			}
+			
+			
+			
+		
+
+		double average = (double) (m1 + m2 + m3)/ 3;
+		
+	System.out.printf("The average is: ");
+	System.out.printf("%.2f", average);
+		
+		
+		
+	
+
+
+	}
+
+}
+
+
+output
+
+
+
+Enter student 1 mark : 
+56
+Enter student 2 mark  : 
+101
+Invalid Input, try again
+Enter student 2 mark between 0 - 100 : 
+-1
+Invalid Input, try again
+Enter student 2 mark between 0 - 100 : 
+99
+Enter student 3 mark : 
+45
+The average is: 66.67
